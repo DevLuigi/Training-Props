@@ -17,7 +17,8 @@ const Container = styled.div`
     }
 
     .titulo {
-        font: 700 1.5em Roboto;
+        font-family: sans-serif;
+        font-weight: bold;
         color: #000;
     }
 
@@ -31,13 +32,19 @@ const Container = styled.div`
         height: 10em;
     }
 
+    div{
+        font-family: sans-serif;
+        font-size: 1em;
+        margin: 0.5em;
+    }
+
     button {
         border-radius: 2em;
         border: none;
         outline: none;
         padding: .5em 1.5em;
         
-        font: 400 1em Roboto;
+        font-family: sans-serif;
         background-color: #f837b2;
         color: #fff;
         cursor: pointer;

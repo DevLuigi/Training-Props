@@ -7,6 +7,9 @@ const Container = styled.div`
 
     padding: 3em;
 
+    h1 {
+        font-family: sans-serif;
+    }
 
     .lista-produtos {
         display: flex;
@@ -15,8 +18,12 @@ const Container = styled.div`
     }
 
     .conteudo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin: 2em 0em;
     }
+  
 `
 
 export { Container }
