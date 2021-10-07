@@ -11,6 +11,11 @@ const Container = styled.div`
         font-family: sans-serif;
     }
 
+    .voltar{
+        height: 2em;
+        width: 2em;
+    }
+
     .lista-produtos {
         display: flex;
         justify-content: center;
