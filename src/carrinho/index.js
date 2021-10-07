@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom"
 import { Container } from "./styled"
 import { useEffect, useState } from "react"
+
 import Cookies from "js-cookie"
 import CarrinhoItem from './carrinhoItem'
 
@@ -44,7 +45,7 @@ export default function Carrinho(){
     return(
         <Container>
             <div className="cabecalho">
-                <Link to="/"> <img className="voltar" src="/assets/images/voltar.svg" alt="" /> </Link>
+                <Link to="/home"> <img className="voltar" src="/assets/images/voltar.svg" alt="" /> </Link>
                 <div className="titulo"> Carrinho </div>
             </div>  
             <div className="itens">

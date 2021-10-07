@@ -1,6 +1,7 @@
 import { Container } from './styled.js'
 import Produto from '../produto'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Home(){
 
@@ -100,7 +101,8 @@ export default function Home(){
 
     return(
         <Container>
-            <h1> Sejam Bem vindos!! </h1>
+            <Link to="/"> <img className="voltar" src="/assets/images/voltar.svg" alt="" /> </Link>
+            <h1> Sejam Bem vindos ao Carrinho!! </h1>
             <div className="listar-produtos">
                 <div className="conteudo"> 
                     {produtos.map(item =>

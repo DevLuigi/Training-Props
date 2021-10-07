@@ -2,7 +2,7 @@ import Cookies from "js-cookie";
 
 import { Container } from "./styled";
 import { Link, useHistory } from "react-router-dom";
-import { useState} from "react";
+import { useState } from "react";
 
 
 
@@ -29,7 +29,7 @@ export default function DetalhesProduto(props){
     return(
         <Container>
             <div>
-                <Link to="/"> <img className="voltar" src="/assets/images/voltar.svg" alt=""/> </Link>
+                <Link to="/home"> <img className="voltar" src="/assets/images/voltar.svg" alt=""/> </Link>
                 <div className="conteudo">
                     <div className="titulo"> Detalhes do Produto </div>
                     <div className="alinhando"> 
