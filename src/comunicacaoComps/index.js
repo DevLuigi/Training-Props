@@ -25,14 +25,20 @@ export default function Contador(){
 
     return(
         <Container>
-            <Link to="/"> <img className="voltar" src="/assets/images/voltar.svg" alt="" /> </Link>
-            <div className="fonte"> Contador </div>
-            <div className="fonte"> {qtd} </div>
-            <div>
-                <button onClick={incrementar}> + </button>
-                <button onClick={decrementar}> - </button>
-            </div>
-            <Resetar funcao={resetar}/>
+            <div className="conteudo">
+                <div className="align-voltar">
+                    <Link to="/"> <img className="voltar" src="/assets/images/voltar.svg" alt="" /> </Link>
+                </div>
+                <div className="contador">
+                    <div className="fonte"> Contador </div>
+                    <div className="fonte"> {qtd} </div>
+                    <div>
+                        <button onClick={incrementar}> + </button>
+                        <button onClick={decrementar}> - </button>
+                    </div>
+                    <Resetar funcao={resetar}/>
+                </div>    
+            </div>    
         </Container>
     )
 }
